@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.4.1'
 
 gem 'rails', '~> 5.2.1'
-gem 'sqlite3'
+gem 'pg'
 gem 'semantic-ui-sass'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
@@ -21,7 +21,7 @@ end
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-	gem "sqlite3"
+	gem "pg"
 end
 
 group :development do
